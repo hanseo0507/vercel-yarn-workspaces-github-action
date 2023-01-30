@@ -2,7 +2,7 @@
   "name": "vercel-yarn-workspaces-github-action",
   "description": "A Gtihub Action for deploy Monorepo with Yarn Workspaces in ▲ vercel",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": "https://github.com/hanseo0507/vercel-yarn-workspaces-github-action.git",
   "author": "HanSu Lee <i.hansu.lee@gmail.com>",
   "license": "MIT",
@@ -12,6 +12,7 @@
     "prepackage": "rimraf dist",
     "lint": "eslint --fix src/**/*.ts",
     "format": "prettier --write src/**/*.ts",
+    "dev": "nodemon src/index.ts",
     "build": "tsc",
     "package": "ncc build lib/index.js --license license.txt"
   },
@@ -28,6 +29,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
+    "nodemon": "^2.0.20",
     "prettier": "^2.8.3",
     "rimraf": "^4.1.2",
     "typescript": "^4.9.4"
