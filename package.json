@@ -37,7 +37,9 @@
   "lint-staged": {
     "**/*.ts": [
       "yarn lint",
-      "yarn format"
+      "yarn format",
+      "yarn build",
+      "yarn package"
     ]
   }
 }
