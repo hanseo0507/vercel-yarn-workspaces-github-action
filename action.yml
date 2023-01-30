@@ -1,0 +1,7 @@
+name: 'Deploy Monorepo with Yarn Workspace to Vercel'
+description: 'A Gtihub Action for deploy Monorepo with Yarn Workspaces in ▲ @vercel'
+author: 'HanSu Lee'
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
